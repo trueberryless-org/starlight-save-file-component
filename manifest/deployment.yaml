@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: starlight-download-link
+  namespace: starlight-download-link
+  labels:
+    app: starlight-download-link
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: starlight-download-link
+  template:
+    metadata:
+      labels:
+        app: starlight-download-link
+    spec:
+      containers:
+        - name: starlight-download-link
+          image: "trueberryless/starlight-download-link"
+          imagePullPolicy: Always
