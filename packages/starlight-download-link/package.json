@@ -7,5 +7,12 @@
   "exports": {
     ".": "./index.ts",
     "./package.json": "./package.json"
-  }
+  },
+  "keywords": [
+    "astro-component",
+    "withastro",
+    "starlight",
+    "download",
+    "link"
+  ]
 }
