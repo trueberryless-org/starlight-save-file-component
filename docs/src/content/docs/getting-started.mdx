@@ -1,0 +1,35 @@
+---
+title: Getting Started
+---
+
+Quickly display a link to some download asset on your Starlight site.
+
+## Prerequisites
+
+You will need to have a Starlight website set up.
+If you don't have one yet, you can follow the ["Getting Started"](https://starlight.astro.build/getting-started) guide in the Starlight docs to create one.
+
+## Installation
+
+import { Steps } from "@astrojs/starlight/components";
+import PackageManagers from "starlight-package-managers";
+
+<Steps>
+
+1. Install the Starlight Package Managers component using your favorite package manager:
+
+   <PackageManagers pkg="starlight-download-link" />
+
+2. Use the component in any MDX files of your Starlight documentation site.
+
+   ```mdx title="src/content/docs/example.mdx"
+   import { DownloadLink } from "starlight-download-link";
+
+   <DownloadLink title="Example PDF" href="../assets/example.pdf" />
+   ```
+
+3. [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the component.
+
+</Steps>
+
+The Starlight Download Link component has various [properties](/properties).
