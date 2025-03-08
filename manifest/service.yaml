@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: starlight-download-link
+  namespace: starlight-download-link
+  annotations:
+    cert-manager.io/issuer: acme-issuer
+spec:
+  selector:
+    app: starlight-download-link
+  ports:
+    - name: http
+      port: 80
