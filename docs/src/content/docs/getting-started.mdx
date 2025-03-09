@@ -12,7 +12,7 @@ If you don't have one yet, you can follow the ["Getting Started"](https://starli
 ## Installation
 
 import { Steps } from "@astrojs/starlight/components";
-import PackageManagers from "starlight-package-managers";
+import { PackageManagers } from "starlight-package-managers";
 
 <Steps>
 
@@ -25,11 +25,11 @@ import PackageManagers from "starlight-package-managers";
    ```mdx title="src/content/docs/example.mdx"
    import { DownloadLink } from "starlight-download-link";
 
-   <DownloadLink title="Example PDF" href="../assets/example.pdf" />
+   <DownloadLink title="Example PDF" href="../../../public/example.pdf" />
    ```
 
 3. [Start the development server](https://starlight.astro.build/getting-started/#start-the-development-server) to preview the component.
 
 </Steps>
 
-The Starlight Download Link component has various [properties](/properties).
+Visit the [usage guide](/usage/) for more information.

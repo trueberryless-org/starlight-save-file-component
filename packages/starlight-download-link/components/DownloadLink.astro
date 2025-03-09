@@ -2,29 +2,33 @@
 import { Icon } from "@astrojs/starlight/components";
 import type { HTMLAttributes } from "astro/types";
 
+Astro.response.headers.set('Content-Disposition', 'attachment');
+
 interface Props extends Omit<HTMLAttributes<"a">, "title"> {
   title: string;
   description?: string;
+  fileName?: string;
 }
 
-const { title, description, ...attributes } = Astro.props;
+const { title, description, fileName, ...attributes } = Astro.props;
 ---
 
-<div class="sl-link-card">
+<div class="sl-download-link">
   <span class="sl-flex stack">
-    <a {...attributes}>
+    <a {...attributes} download={fileName || ""}>
       <span class="title" set:html={title} />
     </a>
     {description && <span class="description" set:html={description} />}
   </span>
-  <Icon name="right-arrow" size="1.333em" class="icon rtl:flip" />
+  <Icon name="download" size="1.333em" class="icon rtl:flip" />
 </div>
 
 <style>
-  .sl-link-card {
+  .sl-download-link {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0.5rem;
+    align-items: center;
     border: 1px solid var(--sl-color-gray-5);
     border-radius: 0.5rem;
     padding: 1rem;
@@ -65,12 +69,12 @@ const { title, description, ...attributes } = Astro.props;
   }
 
   /* Hover state */
-  .sl-link-card:hover {
+  .sl-download-link:hover {
     background: var(--sl-color-gray-7, var(--sl-color-gray-6));
     border-color: var(--sl-color-gray-2);
   }
 
-  .sl-link-card:hover .icon {
+  .sl-download-link:hover .icon {
     color: var(--sl-color-white);
   }
 </style>

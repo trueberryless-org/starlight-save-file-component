@@ -1,0 +1,151 @@
+---
+title: Usage
+description: Learn how to display a link to a downloadable asset.
+---
+
+import { Preview } from '@hideoo/starlight-plugins-docs-components'
+import { DownloadLink } from "starlight-download-link";
+import { CardGrid } from '@astrojs/starlight/components';
+
+To display a link to a downloadable asset, use the `<DownloadLink>` component.
+
+<Preview>
+
+<DownloadLink slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+
+</Preview>
+
+## Import
+
+```tsx
+import { DownloadLink } from "starlight-download-link";
+```
+
+## Usage
+
+Display a downloadable asset using the `<DownloadLink>` component.
+Each `<DownloadLink>` requires a [`title`](#title) and an [`href`](#href) attribute.
+
+<Preview>
+
+```mdx
+import { DownloadLink } from "starlight-download-link";
+
+<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
+```
+
+<Fragment slot="markdoc">
+
+```markdoc
+{% downloadlink title="Example PDF" href="../../../public/example.pdf" /%}
+```
+
+</Fragment>
+
+<DownloadLink slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+
+</Preview>
+
+### Add a download description
+
+Add a short description to a download link using the [`description`](#description) attribute.
+
+<Preview>
+
+```mdx {6}
+import { DownloadLink } from "starlight-download-link";
+
+<DownloadLink
+  title="Example PDF"
+  href="../../../public/example.pdf"
+  description="A sample PDF file."
+/>
+```
+
+<Fragment slot="markdoc">
+
+```markdoc {4}
+{% downloadlink
+   title="Example PDF"
+  href="../../../public/example.pdf"
+  description="A sample PDF file." /%}
+```
+
+</Fragment>
+
+<DownloadLink
+  slot="preview"
+  title="Example PDF"
+  href="../../../public/example.pdf"
+  description="A sample PDF file."
+/>
+
+</Preview>
+
+### Group download links
+
+Display multiple download links side-by-side when there’s enough space by grouping them using the [`<CardGrid>`](https://starlight.astro.build/components/card-grids/) component.
+See the [Starlight documentation guide on “Group link cards”](https://starlight.astro.build/components/card-grids/#group-link-cards) for an example.
+
+<Preview>
+
+```mdx {4,7}
+import { CardGrid } from '@astrojs/starlight/components';
+import { DownloadLink } from "starlight-download-link";
+
+<CardGrid>
+	<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
+	<DownloadLink title="Example PDF 2" href="../../../public/example.pdf" />
+</CardGrid>
+```
+
+<Fragment slot="markdoc">
+
+```markdoc {1,5}
+{% cardgrid %}
+{% downloadlink title="Example PDF" href="../../../public/example.pdf" /%}
+
+{% downloadlink title="Example PDF 2" href="../../../public/example.pdf" /%}
+{% /cardgrid %}
+```
+
+</Fragment>
+
+<CardGrid slot="preview">
+	<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
+  <DownloadLink title="Example PDF 2" href="../../../public/example.pdf" />
+</CardGrid>
+
+</Preview>
+
+## `<DownloadLink>` Props
+
+**Implementation:** [`DownloadLink.astro`](https://github.com/trueberryless-org/starlight-download-link/blob/main/packages/starlight-download-link/components/DownloadLink.astro)
+
+The `<DownloadLink>` component accepts the following props, as well as all other [`<a>` element attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a):
+
+### `title`
+
+**required**  
+**type:** `string`
+
+The title of the download link to display.
+
+### `href`
+
+**required**  
+**type:** `string`
+
+The asset to download when the card is interacted with.
+
+### `description`
+
+**type:** `string`
+
+An optional description to display below the title.
+
+### `fileName`
+
+**type:** `string`
+
+An optional file name for the downloaded file.

@@ -8,6 +8,9 @@
     ".": "./index.ts",
     "./package.json": "./package.json"
   },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.32"
+  },
   "keywords": [
     "astro-component",
     "withastro",
