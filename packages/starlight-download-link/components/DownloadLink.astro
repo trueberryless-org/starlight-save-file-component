@@ -2,7 +2,7 @@
 import { Icon } from "@astrojs/starlight/components";
 import type { HTMLAttributes } from "astro/types";
 
-Astro.response.headers.set('Content-Disposition', 'attachment');
+Astro.response.headers.set("Content-Disposition", "attachment");
 
 interface Props extends Omit<HTMLAttributes<"a">, "title"> {
   title: string;
