@@ -79,7 +79,8 @@ jobs:
         run: |
           git checkout changeset-release/main
           VERSION=$(node -p "require('./packages/starlight-save-file-component/package.json').version")
-          git commit --amend -m "[ci] release ${{ env.IMAGE_NAME }}-docs v$VERSION" --no-edit
+          NAME=$(node -p "require('./packages/starlight-save-file-component/package.json').name")
+          git commit --amend -m "[ci] release $NAME v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
   image-tag:
