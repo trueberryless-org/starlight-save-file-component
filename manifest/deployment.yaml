@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: starlight-save-file-component
-          image: "trueberryless/starlight-save-file-component"
+          image: "trueberryless/starlight-save-file-component:0.0.2"
           imagePullPolicy: Always
