@@ -21,12 +21,12 @@
     "save",
     "file"
   ],
-  "homepage": "https://github.com/trueberryless-org/starlight-cooler-credit",
-  "bugs": "https://github.com/trueberryless-org/starlight-cooler-credit/issues",
+  "homepage": "https://github.com/trueberryless-org/starlight-save-file-component",
+  "bugs": "https://github.com/trueberryless-org/starlight-save-file-component/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-cooler-credit.git",
-    "directory": "packages/starlight-cooler-credit"
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git",
+    "directory": "packages/starlight-save-file-component"
   },
   "author": "trueberryless-org",
   "publishConfig": {
