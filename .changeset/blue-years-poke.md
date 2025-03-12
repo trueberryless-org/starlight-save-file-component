@@ -1,5 +1,5 @@
 ---
-"starlight-save-file-component": major
+"starlight-save-file-component": minor
 ---
 
 Initial release
