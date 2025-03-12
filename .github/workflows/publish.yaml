@@ -13,7 +13,7 @@ concurrency:
 env:
   REGISTRY: docker.io
   IMAGE_OWNER: trueberryless
-  IMAGE_NAME: starlight-download-link
+  IMAGE_NAME: starlight-save-file-component
   NODE_VERSION: 20
 
 jobs:
@@ -21,7 +21,7 @@ jobs:
     name: Filter
     runs-on: ubuntu-latest
     outputs:
-      starlight-download-link: ${{ steps.filter.outputs.starlight-download-link }}
+      starlight-save-file-component: ${{ steps.filter.outputs.starlight-save-file-component }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
@@ -30,8 +30,8 @@ jobs:
         id: filter
         with:
           filters: |
-            starlight-download-link:
-              - 'packages/starlight-download-link/**'
+            starlight-save-file-component:
+              - 'packages/starlight-save-file-component/**'
 
   changesets:
     name: Changesets
@@ -86,7 +86,7 @@ jobs:
       - name: Read version from package.json
         id: get_version
         run: |
-          VERSION=$(jq -r '.version' packages/starlight-download-link/package.json)
+          VERSION=$(jq -r '.version' packages/starlight-save-file-component/package.json)
           echo "IMAGE_TAG=$VERSION" >> $GITHUB_ENV
 
   publish:
@@ -121,7 +121,7 @@ jobs:
         run: pnpm i
 
       - run: |
-          cd packages/starlight-download-link
+          cd packages/starlight-save-file-component
           npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -139,7 +139,7 @@ jobs:
       - id: extract-changelog
         uses: sean0x42/markdown-extract@v2.1.0
         with:
-          file: packages/starlight-download-link/CHANGELOG.md
+          file: packages/starlight-save-file-component/CHANGELOG.md
           pattern: ${{ needs.image-tag.outputs.IMAGE_TAG }}
 
       - uses: ncipollo/release-action@v1

@@ -4,58 +4,58 @@ description: Learn how to display a link to a downloadable asset.
 ---
 
 import { Preview } from '@hideoo/starlight-plugins-docs-components'
-import { DownloadLink } from "starlight-download-link";
+import { SaveFile } from "starlight-save-file-component";
 import { CardGrid } from '@astrojs/starlight/components';
 
-To display a link to a downloadable asset, use the `<DownloadLink>` component.
+To display a link to a downloadable asset, use the `<SaveFile>` component.
 
 <Preview>
 
-<DownloadLink slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile slot="preview" title="Example PDF" href="../../../public/example.pdf" />
 
 </Preview>
 
 ## Import
 
 ```tsx
-import { DownloadLink } from "starlight-download-link";
+import { SaveFile } from "starlight-save-file-component";
 ```
 
 ## Usage
 
-Display a downloadable asset using the `<DownloadLink>` component.
-Each `<DownloadLink>` requires a [`title`](#title) and an [`href`](#href) attribute.
+Display a downloadable asset using the `<SaveFile>` component.
+Each `<SaveFile>` requires a [`title`](#title) and an [`href`](#href) attribute.
 
 <Preview>
 
 ```mdx
-import { DownloadLink } from "starlight-download-link";
+import { SaveFile } from "starlight-save-file-component";
 
-<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile title="Example PDF" href="../../../public/example.pdf" />
 ```
 
 <Fragment slot="markdoc">
 
 ```markdoc
-{% downloadlink title="Example PDF" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF" href="../../../public/example.pdf" /%}
 ```
 
 </Fragment>
 
-<DownloadLink slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile slot="preview" title="Example PDF" href="../../../public/example.pdf" />
 
 </Preview>
 
-### Add a download description
+### Add a description to the save file component
 
-Add a short description to a download link using the [`description`](#description) attribute.
+Add a short description to the component using the [`description`](#description) attribute.
 
 <Preview>
 
 ```mdx {6}
-import { DownloadLink } from "starlight-download-link";
+import { SaveFile } from "starlight-save-file-component";
 
-<DownloadLink
+<SaveFile
   title="Example PDF"
   href="../../../public/example.pdf"
   description="A sample PDF file."
@@ -65,7 +65,7 @@ import { DownloadLink } from "starlight-download-link";
 <Fragment slot="markdoc">
 
 ```markdoc {4}
-{% downloadlink
+{% SaveFile
    title="Example PDF"
   href="../../../public/example.pdf"
   description="A sample PDF file." /%}
@@ -73,7 +73,7 @@ import { DownloadLink } from "starlight-download-link";
 
 </Fragment>
 
-<DownloadLink
+<SaveFile
   slot="preview"
   title="Example PDF"
   href="../../../public/example.pdf"
@@ -82,20 +82,20 @@ import { DownloadLink } from "starlight-download-link";
 
 </Preview>
 
-### Group download links
+### Group save file components
 
-Display multiple download links side-by-side when there’s enough space by grouping them using the [`<CardGrid>`](https://starlight.astro.build/components/card-grids/) component.
+Display multiple save file components side-by-side when there’s enough space by grouping them using the [`<CardGrid>`](https://starlight.astro.build/components/card-grids/) component.
 See the [Starlight documentation guide on “Group link cards”](https://starlight.astro.build/components/card-grids/#group-link-cards) for an example.
 
 <Preview>
 
 ```mdx {4,7}
 import { CardGrid } from '@astrojs/starlight/components';
-import { DownloadLink } from "starlight-download-link";
+import { SaveFile } from "starlight-save-file-component";
 
 <CardGrid>
-	<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
-	<DownloadLink title="Example PDF 2" href="../../../public/example.pdf" />
+	<SaveFile title="Example PDF" href="../../../public/example.pdf" />
+	<SaveFile title="Example PDF 2" href="../../../public/example.pdf" />
 </CardGrid>
 ```
 
@@ -103,33 +103,33 @@ import { DownloadLink } from "starlight-download-link";
 
 ```markdoc {1,5}
 {% cardgrid %}
-{% downloadlink title="Example PDF" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF" href="../../../public/example.pdf" /%}
 
-{% downloadlink title="Example PDF 2" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF 2" href="../../../public/example.pdf" /%}
 {% /cardgrid %}
 ```
 
 </Fragment>
 
 <CardGrid slot="preview">
-	<DownloadLink title="Example PDF" href="../../../public/example.pdf" />
-  <DownloadLink title="Example PDF 2" href="../../../public/example.pdf" />
+	<SaveFile title="Example PDF" href="../../../public/example.pdf" />
+  <SaveFile title="Example PDF 2" href="../../../public/example.pdf" />
 </CardGrid>
 
 </Preview>
 
-## `<DownloadLink>` Props
+## `<SaveFile>` Props
 
-**Implementation:** [`DownloadLink.astro`](https://github.com/trueberryless-org/starlight-download-link/blob/main/packages/starlight-download-link/components/DownloadLink.astro)
+**Implementation:** [`SaveFile.astro`](https://github.com/trueberryless-org/starlight-save-file-component/blob/main/packages/starlight-save-file-component/components/SaveFile.astro)
 
-The `<DownloadLink>` component accepts the following props, as well as all other [`<a>` element attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a):
+The `<SaveFile>` component accepts the following props, as well as all other [`<a>` element attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a):
 
 ### `title`
 
 **required**  
 **type:** `string`
 
-The title of the download link to display.
+The title of the save file component to display.
 
 ### `href`
 

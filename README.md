@@ -1,14 +1,14 @@
-# `starlight-download-link`
+# `starlight-save-file-component`
 
 Quickly display a link to some download asset on your Starlight site.
 
 ## Package
 
-If you are looking for the Starlight component package, you can find it in the [`packages/starlight-download-link/`](/packages/starlight-download-link/) directory.
+If you are looking for the Starlight component package, you can find it in the [`packages/starlight-save-file-component/`](/packages/starlight-save-file-component/) directory.
 
 ## Project structure
 
-This project uses pnpm workspaces to develop a single Starlight component from the `packages/starlight-download-link/` directory. A Starlight documentation site is also available in the `docs/` directory that is also used for testing and demonstrating the Starlight component.
+This project uses pnpm workspaces to develop a single Starlight component from the `packages/starlight-save-file-component/` directory. A Starlight documentation site is also available in the `docs/` directory that is also used for testing and demonstrating the Starlight component.
 
 ## License
 

@@ -1,22 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: starlight-download-link
-  namespace: starlight-download-link
+  name: starlight-save-file-component
+  namespace: starlight-save-file-component
 spec:
   rules:
-    - host: starlight-download-link.trueberryless.org
+    - host: starlight-save-file-component.trueberryless.org
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: starlight-download-link
+                name: starlight-save-file-component
                 port:
                   number: 80
 
   tls:
     - hosts:
-        - starlight-download-link.trueberryless.org
-      secretName: starlight-download-link
+        - starlight-save-file-component.trueberryless.org
+      secretName: starlight-save-file-component

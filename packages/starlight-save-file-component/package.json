@@ -1,21 +1,24 @@
 {
-  "name": "starlight-download-link",
+  "name": "starlight-save-file-component",
   "version": "0.0.0",
   "license": "MIT",
   "description": "Quickly display a link to some download asset on your Starlight site.",
   "type": "module",
   "exports": {
     ".": "./index.ts",
+    "./components/SaveFile.astro": "./components/SaveFile.astro",
     "./package.json": "./package.json"
   },
   "peerDependencies": {
     "@astrojs/starlight": ">=0.32"
   },
   "keywords": [
-    "astro-component",
     "withastro",
     "starlight",
+    "component",
     "download",
-    "link"
+    "link",
+    "save",
+    "file"
   ]
 }

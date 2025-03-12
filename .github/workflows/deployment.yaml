@@ -12,7 +12,7 @@ concurrency:
 env:
   REGISTRY: docker.io
   IMAGE_OWNER: trueberryless
-  IMAGE_NAME: starlight-download-link
+  IMAGE_NAME: starlight-save-file-component
   NODE_VERSION: 20
 
 jobs:

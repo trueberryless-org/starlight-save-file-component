@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: starlight-download-link
-  namespace: starlight-download-link
+  name: starlight-save-file-component
+  namespace: starlight-save-file-component
   labels:
-    app: starlight-download-link
+    app: starlight-save-file-component
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: starlight-download-link
+      app: starlight-save-file-component
   template:
     metadata:
       labels:
-        app: starlight-download-link
+        app: starlight-save-file-component
     spec:
       containers:
-        - name: starlight-download-link
-          image: "trueberryless/starlight-download-link"
+        - name: starlight-save-file-component
+          image: "trueberryless/starlight-save-file-component"
           imagePullPolicy: Always

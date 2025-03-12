@@ -1,13 +1,13 @@
 {
-  "name": "starlight-download-link-monorepo",
+  "name": "starlight-save-file-component-monorepo",
   "version": "0.0.0",
-  "homepage": "https://github.com/trueberryless-org/starlight-download-link",
+  "homepage": "https://github.com/trueberryless-org/starlight-save-file-component",
   "bugs": {
-    "url": "https://github.com/trueberryless-org/starlight-download-link/issues"
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-download-link.git"
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git"
   },
   "license": "MIT",
   "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
