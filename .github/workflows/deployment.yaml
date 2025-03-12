@@ -78,7 +78,7 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'true'
         run: |
           git checkout changeset-release/main
-          VERSION=$(node -p "require('./docs/package.json').version")
+          VERSION=$(node -p "require('./packages/starlight-save-file-component/package.json').version")
           git commit --amend -m "[ci] release ${{ env.IMAGE_NAME }}-docs v$VERSION" --no-edit
           git push origin changeset-release/main:changeset-release/main --force
 
