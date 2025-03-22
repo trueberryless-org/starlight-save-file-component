@@ -4,6 +4,8 @@ import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins
 import { defineConfig } from "astro/config";
 import starlightLinksValidator from "starlight-links-validator";
 
+import markdocGrammar from "./grammars/markdoc.tmLanguage.json";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -24,6 +26,7 @@ export default defineConfig({
           items: [{ slug: "getting-started" }, { slug: "usage" }],
         },
       ],
+      expressiveCode: { shiki: { langs: [markdocGrammar] } },
       plugins: [
         starlightLinksValidator(),
         starlightPluginsDocsComponents({
