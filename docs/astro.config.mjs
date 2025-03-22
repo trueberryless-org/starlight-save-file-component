@@ -1,9 +1,7 @@
 // @ts-check
-import node from "@astrojs/node";
 import starlight from "@astrojs/starlight";
 import starlightPluginsDocsComponents from "@trueberryless-org/starlight-plugins-docs-components";
 import { defineConfig } from "astro/config";
-import starlightPluginShowLatestVersion from "starlight-plugin-show-latest-version";
 
 // https://astro.build/config
 export default defineConfig({
@@ -29,16 +27,7 @@ export default defineConfig({
         starlightPluginsDocsComponents({
           pluginName: "starlight-save-file-component",
         }),
-        starlightPluginShowLatestVersion({
-          source: {
-            slug: "starlight-save-file-component",
-          },
-          showInSiteTitle: "deferred",
-        }),
       ],
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
 });
