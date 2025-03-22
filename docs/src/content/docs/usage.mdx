@@ -11,7 +11,7 @@ To display a link to a downloadable asset, use the `<SaveFile>` component.
 
 <Preview>
 
-<SaveFile slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile slot="preview" title="Example PDF" href="../../../example.pdf" />
 
 </Preview>
 
@@ -31,18 +31,18 @@ Each `<SaveFile>` requires a [`title`](#title) and an [`href`](#href) attribute.
 ```mdx
 import { SaveFile } from "starlight-save-file-component";
 
-<SaveFile title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile title="Example PDF" href="../../../example.pdf" />
 ```
 
 <Fragment slot="markdoc">
 
 ```markdoc
-{% SaveFile title="Example PDF" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF" href="../../../example.pdf" /%}
 ```
 
 </Fragment>
 
-<SaveFile slot="preview" title="Example PDF" href="../../../public/example.pdf" />
+<SaveFile slot="preview" title="Example PDF" href="../../../example.pdf" />
 
 </Preview>
 
@@ -57,7 +57,7 @@ import { SaveFile } from "starlight-save-file-component";
 
 <SaveFile
   title="Example PDF"
-  href="../../../public/example.pdf"
+  href="../../../example.pdf"
   description="A sample PDF file."
 />
 ```
@@ -67,7 +67,7 @@ import { SaveFile } from "starlight-save-file-component";
 ```markdoc {4}
 {% SaveFile
    title="Example PDF"
-  href="../../../public/example.pdf"
+  href="../../../example.pdf"
   description="A sample PDF file." /%}
 ```
 
@@ -76,7 +76,7 @@ import { SaveFile } from "starlight-save-file-component";
 <SaveFile
   slot="preview"
   title="Example PDF"
-  href="../../../public/example.pdf"
+  href="../../../example.pdf"
   description="A sample PDF file."
 />
 
@@ -94,8 +94,8 @@ import { CardGrid } from '@astrojs/starlight/components';
 import { SaveFile } from "starlight-save-file-component";
 
 <CardGrid>
-	<SaveFile title="Example PDF" href="../../../public/example.pdf" />
-	<SaveFile title="Example PDF 2" href="../../../public/example.pdf" />
+	<SaveFile title="Example PDF" href="../../../example.pdf" />
+	<SaveFile title="Example PDF 2" href="../../../example.pdf" />
 </CardGrid>
 ```
 
@@ -103,17 +103,17 @@ import { SaveFile } from "starlight-save-file-component";
 
 ```markdoc {1,5}
 {% cardgrid %}
-{% SaveFile title="Example PDF" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF" href="../../../example.pdf" /%}
 
-{% SaveFile title="Example PDF 2" href="../../../public/example.pdf" /%}
+{% SaveFile title="Example PDF 2" href="../../../example.pdf" /%}
 {% /cardgrid %}
 ```
 
 </Fragment>
 
 <CardGrid slot="preview">
-	<SaveFile title="Example PDF" href="../../../public/example.pdf" />
-  <SaveFile title="Example PDF 2" href="../../../public/example.pdf" />
+	<SaveFile title="Example PDF" href="../../../example.pdf" />
+  <SaveFile title="Example PDF 2" href="../../../example.pdf" />
 </CardGrid>
 
 </Preview>
