@@ -16,10 +16,13 @@ export default defineConfig({
         dark: "./src/assets/logo-dark.png",
         replacesTitle: true,
       },
-      social: {
-        github:
-          "https://github.com/trueberryless-org/starlight-save-file-component",
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/trueberryless-org/starlight-save-file-component",
+        },
+      ],
       sidebar: [
         {
           label: "Start here",
