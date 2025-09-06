@@ -1,17 +1,7 @@
 {
   "name": "starlight-save-file-component",
   "version": "0.1.0",
-  "license": "MIT",
   "description": "Quickly display a link to some download asset on your Starlight site.",
-  "type": "module",
-  "exports": {
-    ".": "./index.ts",
-    "./components/SaveFile.astro": "./components/SaveFile.astro",
-    "./package.json": "./package.json"
-  },
-  "peerDependencies": {
-    "@astrojs/starlight": ">=0.32"
-  },
   "keywords": [
     "withastro",
     "starlight",
@@ -22,13 +12,25 @@
     "file"
   ],
   "homepage": "https://github.com/trueberryless-org/starlight-save-file-component",
-  "bugs": "https://github.com/trueberryless-org/starlight-save-file-component/issues",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/trueberryless-org/starlight-save-file-component.git",
     "directory": "packages/starlight-save-file-component"
   },
-  "author": "trueberryless-org",
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./components/SaveFile.astro": "./components/SaveFile.astro",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.32"
+  },
   "publishConfig": {
     "access": "public"
   }
