@@ -1,6 +1,16 @@
 {
   "name": "starlight-save-file-component-docs",
   "version": "0.0.2",
+  "homepage": "https://starlight-save-file-component.trueberryless.org",
+  "bugs": {
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git"
+  },
+  "license": "MIT",
+  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
   "type": "module",
   "scripts": {
     "astro": "astro",
