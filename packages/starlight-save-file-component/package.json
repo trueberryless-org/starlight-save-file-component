@@ -11,7 +11,7 @@
     "save",
     "file"
   ],
-  "homepage": "https://starlight-save-file-component.trueberryless.org",
+  "homepage": "https://starlight-save-file-component.netlify.app/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
   },
@@ -21,7 +21,7 @@
     "directory": "packages/starlight-save-file-component"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "exports": {
     ".": "./index.ts",

@@ -1,7 +1,7 @@
 {
   "name": "starlight-save-file-component-docs",
   "version": "0.0.2",
-  "homepage": "https://starlight-save-file-component.trueberryless.org",
+  "homepage": "https://starlight-save-file-component.netlify.app/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
   },
@@ -10,7 +10,7 @@
     "url": "https://github.com/trueberryless-org/starlight-save-file-component.git"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
