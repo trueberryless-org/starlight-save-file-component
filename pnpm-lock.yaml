@@ -27,7 +27,7 @@ importers:
   docs:
     dependencies:
       '@astrojs/starlight':
-        specifier: ^0.41.2
+        specifier: ^0.41.3
         version: 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@5.15.3(@types/node@24.9.2)(rollup@4.52.5)(typescript@5.9.3)(yaml@2.9.0))(typescript@5.9.3)
       '@hideoo/starlight-plugins-docs-components':
         specifier: ^0.4.2
