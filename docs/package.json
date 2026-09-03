@@ -23,7 +23,7 @@
     "@astrojs/starlight": "^0.41.7",
     "@hideoo/starlight-plugins-docs-components": "^0.4.2",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.6.0",
-    "astro": "^5.15.3",
+    "astro": "^7.0.0",
     "sharp": "^0.35.3",
     "starlight-contributor-list": "^0.4.0",
     "starlight-links-validator": "^0.25.3",
