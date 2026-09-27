@@ -1,6 +1,5 @@
 ---
 import { Icon } from "@astrojs/starlight/components";
-// @ts-ignore
 import type { HTMLAttributes } from "astro/types";
 
 interface Props extends Omit<HTMLAttributes<"a">, "title"> {
@@ -40,7 +39,6 @@ const { title, description, fileName, ...attributes } = Astro.props;
     line-height: var(--sl-line-height-headings);
   }
 
-  /* a11y fix for https://github.com/withastro/starlight/issues/487 */
   a::before {
     content: "";
     position: absolute;
@@ -67,7 +65,6 @@ const { title, description, fileName, ...attributes } = Astro.props;
     color: var(--sl-color-gray-3);
   }
 
-  /* Hover state */
   .sl-download-link:hover {
     background: var(--sl-color-gray-7, var(--sl-color-gray-6));
     border-color: var(--sl-color-gray-2);

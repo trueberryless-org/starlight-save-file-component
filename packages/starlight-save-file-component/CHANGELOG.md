@@ -1,5 +1,15 @@
 # starlight-save-file-component
 
+## 0.2.0
+
+### Minor Changes
+
+- [#58](https://github.com/trueberryless-org/starlight-save-file-component/pull/58) [`4b6a0ae`](https://github.com/trueberryless-org/starlight-save-file-component/commit/4b6a0ae4cbcc7d0160a037a4c19bde5046a7ade4) Thanks [@trueberryless-bot](https://github.com/trueberryless-bot)! - Adds support for Astro v7, drops support for Astro v6 and lower.
+  
+  ⚠️ **BREAKING CHANGE:** The minimum supported version of Starlight is now `0.42.0`.
+  
+  Please follow the [upgrade guide](https://github.com/withastro/starlight/releases/tag/%40astrojs%2Fstarlight%400.42.0) to update your project.
+
 ## 0.1.1
 
 ### Patch Changes
