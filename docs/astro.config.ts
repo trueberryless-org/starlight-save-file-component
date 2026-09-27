@@ -5,15 +5,34 @@ import starlightLinksValidator from "starlight-links-validator";
 
 import markdocGrammar from "./grammars/markdoc.tmLanguage.json";
 
+const site =
+  (process.env.CONTEXT === "deploy-preview" ||
+  process.env.CONTEXT === "branch-deploy"
+    ? process.env.DEPLOY_PRIME_URL
+    : process.env.URL) ?? "https://starlight-save-file-component.netlify.app";
+
+// https://astro.build/config
 export default defineConfig({
+  site,
   integrations: [
     starlight({
       title: "Starlight Save File Component",
-      logo: {
-        light: "./src/assets/logo-light.png",
-        dark: "./src/assets/logo-dark.png",
-        replacesTitle: true,
-      },
+      head: [
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: new URL("og.png", site).href,
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:alt",
+            content: "Download links for your Starlight site.",
+          },
+        },
+      ],
       social: [
         {
           icon: "github",
