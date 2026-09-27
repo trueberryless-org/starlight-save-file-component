@@ -1,12 +1,22 @@
 ---
 title: Starlight Save File Component
 description: Quickly display a link to some download asset on your Starlight site.
+head:
+  - tag: title
+    content: Starlight View Modes
+  - tag: style
+    content: |
+      .hero-html {
+        --size: 12rem;
+        font-size: var(--size);
+        justify-content: center;
+        line-height: var(--size);
+      }
 template: splash
 hero:
   tagline: Quickly display a link to some download asset on your Starlight site.
   image:
-    dark: ../../assets/big-logo-dark.png
-    light: ../../assets/big-logo-light.png
+    html: '💾'
   actions:
     - text: Get started
       link: /getting-started/

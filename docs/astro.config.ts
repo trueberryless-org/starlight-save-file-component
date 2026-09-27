@@ -33,11 +33,6 @@ export default defineConfig({
           },
         },
       ],
-      logo: {
-        light: "./src/assets/logo-light.png",
-        dark: "./src/assets/logo-dark.png",
-        replacesTitle: true,
-      },
       social: [
         {
           icon: "github",
