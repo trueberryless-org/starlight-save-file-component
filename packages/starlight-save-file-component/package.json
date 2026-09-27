@@ -1,6 +1,6 @@
 {
   "name": "starlight-save-file-component",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "Starlight component to quickly display a link to some download asset on your Starlight site.",
   "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
