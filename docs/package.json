@@ -1,16 +1,10 @@
 {
   "name": "starlight-save-file-component-docs",
   "version": "0.0.2",
-  "homepage": "https://starlight-save-file-component.netlify.app/",
-  "bugs": {
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git"
-  },
   "license": "MIT",
+  "description": "Documentation for the Starlight Save File Component.",
   "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
+  "private": true,
   "type": "module",
   "scripts": {
     "astro": "astro",
@@ -20,15 +14,23 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.42.0",
-    "@hideoo/starlight-plugins-docs-components": "^0.4.2",
+    "@astrojs/starlight": "^0.42.4",
     "@trueberryless-org/starlight-plugins-docs-components": "^0.6.0",
-    "astro": "^5.15.3",
-    "sharp": "^0.35.3",
-    "starlight-contributor-list": "^0.4.0",
+    "astro": "^7.3.5",
+    "astro-contributors": "^0.9.0",
+    "sharp": "^0.35.4",
     "starlight-links-validator": "^0.26.0",
-    "starlight-package-managers": "^0.12.0",
+    "starlight-package-managers": "^0.13.0",
     "starlight-save-file-component": "workspace:*"
   },
-  "packageManager": "pnpm@11.1.2"
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "homepage": "https://starlight-save-file-component.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trueberryless-org/starlight-save-file-component.git",
+    "directory": "docs"
+  },
+  "bugs": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
 }
