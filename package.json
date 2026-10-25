@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "description": "Starlight component to quickly display a link to some download asset on your Starlight site.",
-  "homepage": "https://github.com/trueberryless-org/starlight-save-file-component",
+  "homepage": "https://github.com/trueberryless/starlight-save-file-component",
   "bugs": {
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
+    "url": "https://github.com/trueberryless/starlight-save-file-component/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git"
+    "url": "https://github.com/trueberryless/starlight-save-file-component.git"
   },
   "license": "MIT",
   "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
