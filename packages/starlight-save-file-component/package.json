@@ -16,11 +16,11 @@
   ],
   "homepage": "https://starlight-save-file-component.netlify.app/",
   "bugs": {
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component/issues"
+    "url": "https://github.com/trueberryless/starlight-save-file-component/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trueberryless-org/starlight-save-file-component.git",
+    "url": "https://github.com/trueberryless/starlight-save-file-component.git",
     "directory": "packages/starlight-save-file-component"
   },
   "license": "MIT",
