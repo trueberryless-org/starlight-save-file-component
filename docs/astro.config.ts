@@ -46,7 +46,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/trueberryless-org/starlight-save-file-component",
+          href: "https://github.com/trueberryless/starlight-save-file-component",
         },
       ],
       sidebar: [

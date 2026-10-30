@@ -10,7 +10,7 @@ Read the [Starlight Save File Component docs](https://starlight-save-file-compon
 
 ## Package
 
-If you are looking for the Starlight component package, you can find it in the [`packages/starlight-save-file-component/`](https://github.com/trueberryless-org/starlight-save-file-component/tree/main/packages/starlight-save-file-component) directory.
+If you are looking for the Starlight component package, you can find it in the [`packages/starlight-save-file-component/`](https://github.com/trueberryless/starlight-save-file-component/tree/main/packages/starlight-save-file-component) directory.
 
 ## Project structure
 
@@ -20,4 +20,4 @@ This project uses pnpm workspaces to develop a single Starlight component from t
 
 Licensed under the MIT License, Copyright © trueberryless.
 
-See [LICENSE](https://github.com/trueberryless-org/starlight-save-file-component/blob/main/LICENSE) for more information.
+See [LICENSE](https://github.com/trueberryless/starlight-save-file-component/blob/main/LICENSE) for more information.
